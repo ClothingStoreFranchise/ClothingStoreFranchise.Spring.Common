@@ -1,2 +1,2 @@
 # Spring.Common
-Java library with commons utilities for java microservices. 
+Java library with commons utilities for Spring microservices. 
