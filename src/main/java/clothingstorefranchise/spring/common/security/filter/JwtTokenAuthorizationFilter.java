@@ -7,6 +7,8 @@ import clothingstorefranchise.spring.common.security.token.TokenConverter;
 import clothingstorefranchise.spring.common.security.util.SecurityContextUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
+import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.NonNull;
 import org.springframework.web.filter.OncePerRequestFilter;
@@ -23,8 +25,15 @@ import static org.apache.commons.lang3.StringUtils.equalsIgnoreCase;
 public class JwtTokenAuthorizationFilter extends OncePerRequestFilter {
     protected final JwtConfiguration jwtConfiguration;
     protected final TokenConverter tokenConverter;
-
+    /*
+    Class: SecurityContextUtil {
+        if(!new Date().before( claims.getExpirationTime())){
+        	  log.error("Error: Token Expired!);
+        	  throw new JOSEException("Token Expired!");
+        }
+	*/
     @Override
+    @SuppressWarnings("Duplicates")
     protected void doFilterInternal(@NonNull HttpServletRequest request, @NonNull HttpServletResponse response, @NonNull FilterChain chain) throws ServletException, IOException {
         String header = request.getHeader(jwtConfiguration.getHeader().getName());
 

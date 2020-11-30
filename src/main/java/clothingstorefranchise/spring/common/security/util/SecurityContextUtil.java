@@ -13,6 +13,8 @@ import java.util.List;
 
 import static java.util.stream.Collectors.toList;
 
+import java.util.Date;
+
 @Slf4j
 public class SecurityContextUtil {
     private SecurityContextUtil() {
@@ -25,7 +27,11 @@ public class SecurityContextUtil {
             String username = claims.getSubject();
             if (username == null)
                 throw new JOSEException("Username missing from JWT");
-
+            /*
+            if(!new Date().before( claims.getExpirationTime())){
+          	  throw new JOSEException("Token Expired!");
+            }
+             */
             List<String> authorities = claims.getStringListClaim("authorities");
             BaseIdentifiedUser identifiedUser = BaseIdentifiedUser
                     .builder()
