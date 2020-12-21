@@ -17,7 +17,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Service
-@RequiredArgsConstructor(onConstructor = @__(@Autowired))
+@RequiredArgsConstructor(onConstructor_ = @Autowired)
 public class TokenConverter {
     private final JwtConfiguration jwtConfiguration;
 

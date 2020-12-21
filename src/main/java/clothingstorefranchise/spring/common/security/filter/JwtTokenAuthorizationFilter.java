@@ -20,10 +20,11 @@ import java.io.IOException;
 
 import static org.apache.commons.lang3.StringUtils.equalsIgnoreCase;
 
-@RequiredArgsConstructor(onConstructor = @__(@Autowired))
+@RequiredArgsConstructor(onConstructor_ = @Autowired)
 public class JwtTokenAuthorizationFilter extends OncePerRequestFilter {
     protected final JwtConfiguration jwtConfiguration;
     protected final TokenConverter tokenConverter;
+   
     /*
     Class: SecurityContextUtil {
         if(!new Date().before( claims.getExpirationTime())){
