@@ -7,7 +7,6 @@ import clothingstorefranchise.spring.common.security.token.TokenConverter;
 import clothingstorefranchise.spring.common.security.util.SecurityContextUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
-import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.NonNull;
