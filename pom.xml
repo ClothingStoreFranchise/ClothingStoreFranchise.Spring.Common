@@ -12,7 +12,7 @@
 	<groupId>com.github.clothingstorefranchise</groupId>
 	<artifactId>common</artifactId>
 	<version>1.0.0</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 
 	<name>Common java library for Spring projects</name>
 	<url>https://github.com/ClothingStoreFranchise/ClothingStoreFranchise.Spring.Common</url>
