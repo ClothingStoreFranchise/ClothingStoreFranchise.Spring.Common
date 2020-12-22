@@ -11,8 +11,8 @@
 
 	<groupId>com.github.clothingstorefranchise</groupId>
 	<artifactId>common</artifactId>
-	<version>1.0.1</version>
-	<packaging>pom</packaging>
+	<version>1.0.2</version>
+	<packaging>jar</packaging>
 
 	<name>Common java library for Spring projects</name>
 	<url>https://github.com/ClothingStoreFranchise/ClothingStoreFranchise.Spring.Common</url>
