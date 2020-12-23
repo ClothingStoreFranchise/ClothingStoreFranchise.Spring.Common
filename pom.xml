@@ -9,13 +9,36 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.github.clothingstorefranchise</groupId>
+	<groupId>ClothingStoreFranchise</groupId>
 	<artifactId>ClothingStoreFranchise.Spring.Common</artifactId>
 	<version>1.0.6</version>
 	<packaging>pom</packaging>
 	
 	<name>common</name>
 	<description>POM package for Spring Boot microservices</description>
+	<url>https://github.com/ClothingStoreFranchise/ClothingStoreFranchise.Spring.Common</url>
+
+	<scm>
+		<connection>scm:git:git://github.com/ClothingStoreFranchise/ClothingStoreFranchise.Spring.Common.git</connection>
+		<developerConnection>scm:git:ssh://github.com/ClothingStoreFranchise/ClothingStoreFranchise.Spring.Common.git</developerConnection>
+		<url>https://github.com/ClothingStoreFranchise/ClothingStoreFranchise.Spring.Common</url>
+	</scm>
+
+	<licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+	
+	<developers>
+        <developer>
+            <name>Jorge Aguilera</name>
+            <email>aguilera.go.jorge@gmail.com</email>
+            <organization>com.github.ClothingStoreFranchise</organization>
+            <organizationUrl>https://github.com/ClothingStoreFranchise/ClothingStoreFranchise.Spring.Common</organizationUrl>
+        </developer>
+    </developers>
 
 	<properties>
 		<spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
@@ -29,8 +52,8 @@
 	<distributionManagement>
 	   <repository>
 	     <id>github</id>
-	     <name>GitHub JorgeAgui Apache Maven Packages</name>
-	     <url>https://maven.pkg.github.com/JorgeAgui/ClothingStoreFranchise.Spring.Common</url>
+	     <name>GitHub ClothingStoreFranchise Apache Maven Packages</name>
+	     <url>https://maven.pkg.github.com/ClothingStoreFranchise/ClothingStoreFranchise.Spring.Common</url>
 	   </repository>
 	</distributionManagement>
 	
@@ -143,6 +166,25 @@
 	</dependencyManagement>
 
 	<build>
+		<pluginManagement>
+            <plugins>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-plugin-plugin</artifactId>
+                    <version>3.6.0</version>
+                    <configuration>
+                        <!-- see http://jira.codehaus.org/browse/MNG-5346 -->
+                        <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>3.9.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -164,6 +206,11 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>3.0.0-M1</version>
+            </plugin>
 		</plugins>
 	</build>
 

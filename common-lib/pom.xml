@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.github.clothingstorefranchise</groupId>
+		<groupId>ClothingStoreFranchise</groupId>
 		<artifactId>ClothingStoreFranchise.Spring.Common</artifactId>
 		<version>1.0.6</version>
 	</parent>
@@ -12,7 +12,7 @@
 	<artifactId>common-lib</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Common java library for Spring projects</name>
+	<name>common-lib</name>
 	<description>Helper library for Spring Boot microservices</description>
 	<url>https://github.com/ClothingStoreFranchise/ClothingStoreFranchise.Spring.Common</url>
 
