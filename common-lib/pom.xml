@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.github.clothingstorefranchise</groupId>
-		<artifactId>common</artifactId>
-		<version>1.0.5</version>
+		<artifactId>ClothingStoreFranchise.Spring.Common</artifactId>
+		<version>1.0.6</version>
 	</parent>
 	
 	<groupId>com.github.clothingstorefranchise.common-lib</groupId>
