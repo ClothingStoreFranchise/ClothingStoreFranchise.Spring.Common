@@ -24,10 +24,6 @@
 	
 	<modules>
 		<module>common-lib</module>
-		<module>gateway</module>
-		<module>authentication</module>
-		<module>inventory</module>
-		<module>sales</module>
 	</modules>
 	
 	<dependencies>
