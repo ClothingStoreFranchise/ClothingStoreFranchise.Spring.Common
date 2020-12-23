@@ -11,33 +11,8 @@
 
 	<groupId>com.github.clothingstorefranchise</groupId>
 	<artifactId>common</artifactId>
-	<version>1.0.3</version>
-	<packaging>jar</packaging>
-
-	<name>Common java library for Spring projects</name>
-	<url>https://github.com/ClothingStoreFranchise/ClothingStoreFranchise.Spring.Common</url>
-
-	<developers>
-		<developer>
-			<name>Jorge Aguilera Gomez</name>
-			<email>aguilera.go.jorge@gmail.com</email>
-			<organization>ClothingStoreFranchise</organization>
-			<organizationUrl>https://github.com/ClothingStoreFranchise</organizationUrl>
-		</developer>
-	</developers>
-
-	<scm>
-		<connection>scm:git:git://github.com/ClothingStoreFranchise/ClothingStoreFranchise.Spring.Common.git</connection>
-		<developerConnection>scm:git:ssh://github.com/ClothingStoreFranchise/ClothingStoreFranchise.Spring.Common.git</developerConnection>
-		<url>https://github.com/ClothingStoreFranchise/ClothingStoreFranchise.Spring.Common</url>
-	</scm>
-
-	<licenses>
-		<license>
-			<name>The Apache License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-		</license>
-	</licenses>
+	<version>1.0.4</version>
+	<packaging>pom</packaging>
 
 	<properties>
 		<spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
@@ -183,4 +158,7 @@
 			<url>https://repo.spring.io/milestone</url>
 		</repository>
 	</repositories>
+	<modules>
+		<module>common-lib</module>
+	</modules>
 </project>

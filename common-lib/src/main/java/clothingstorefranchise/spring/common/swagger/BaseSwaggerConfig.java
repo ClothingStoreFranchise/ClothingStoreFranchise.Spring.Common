@@ -26,7 +26,7 @@ public class BaseSwaggerConfig {
 	private ApiInfo metaData() {
 		return new ApiInfoBuilder()
 				.title("Studing microservices")
-				.description("Everybody is a Jedi now")
+				.description("Everybody")
 				.version("1.0")
 				.contact(new Contact("Jorge Aguilera", "http://inf.uva.es", "aguilera.go.jorge@gmail.com"))
 				.license("license")
