@@ -8,6 +8,9 @@
 		<version>1.0.4</version>
 	</parent>
 	<artifactId>common-lib</artifactId>
+	<version>0.0.1</version>
+	<packaging>jar</packaging>
+	
 
 	<name>Common java library for Spring projects</name>
 	<url>https://github.com/ClothingStoreFranchise/ClothingStoreFranchise.Spring.Common</url>
