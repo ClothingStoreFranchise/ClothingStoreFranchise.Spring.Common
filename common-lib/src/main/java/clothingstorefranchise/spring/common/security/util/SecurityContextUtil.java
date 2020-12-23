@@ -13,8 +13,6 @@ import java.util.List;
 
 import static java.util.stream.Collectors.toList;
 
-import java.util.Date;
-
 @Slf4j
 public class SecurityContextUtil {
     private SecurityContextUtil() {
