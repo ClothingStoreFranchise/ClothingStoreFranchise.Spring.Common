@@ -4,37 +4,15 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>ClothingStoreFranchise</groupId>
-		<artifactId>ClothingStoreFranchise.Spring.Common</artifactId>
-		<version>1.0.6</version>
+		<artifactId>common</artifactId>
+		<version>1.0.8</version>
 	</parent>
 	
-	<groupId>com.github.clothingstorefranchise.common-lib</groupId>
+	<groupId>ClothingStoreFranchise.common-lib</groupId>
 	<artifactId>common-lib</artifactId>
 	<packaging>jar</packaging>
 
 	<name>common-lib</name>
 	<description>Helper library for Spring Boot microservices</description>
-	<url>https://github.com/ClothingStoreFranchise/ClothingStoreFranchise.Spring.Common</url>
-
-	<developers>
-		<developer>
-			<name>Jorge Aguilera Gomez</name>
-			<email>aguilera.go.jorge@gmail.com</email>
-			<organization>ClothingStoreFranchise</organization>
-			<organizationUrl>https://github.com/ClothingStoreFranchise</organizationUrl>
-		</developer>
-	</developers>
-
-	<scm>
-		<connection>scm:git:git://github.com/ClothingStoreFranchise/ClothingStoreFranchise.Spring.Common.git</connection>
-		<developerConnection>scm:git:ssh://github.com/ClothingStoreFranchise/ClothingStoreFranchise.Spring.Common.git</developerConnection>
-		<url>https://github.com/ClothingStoreFranchise/ClothingStoreFranchise.Spring.Common</url>
-	</scm>
-
-	<licenses>
-		<license>
-			<name>The Apache License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-		</license>
-	</licenses>
+	
 </project>
