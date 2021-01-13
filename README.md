@@ -1,4 +1,4 @@
-# Spring.Common
+# ClothingStoreFranchise: Common Spring Boot Library
 
 **Description**
 ----------------
